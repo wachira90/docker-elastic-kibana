@@ -1,0 +1,11 @@
+version: '2'
+
+services:
+
+  kibana:
+    image: wachira90/kibana:7.13.2
+    environment:
+      SERVER_NAME: 172.23.0.1
+      ELASTICSEARCH_HOSTS: http://172.23.0.1:9200
+    ports:
+      - "5601:5601"
