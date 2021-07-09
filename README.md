@@ -44,6 +44,15 @@ chmod g+rwx esdatadir
 chgrp 0 esdatadir
 ```
 
+## add host
+```
+environment:
+  ELASTICSEARCH_HOSTS: '["http://es01:9200","http://es02:9200","http://es03:9200","http://es04:9200"]'
+# OR
+environment:
+  - ELASTICSEARCH_HOSTS=["http://es01:9200","http://es02:9200","http://es03:9200","http://es04:9200"]
+```
+
 ## for more info
 ```
 https://medium.com/machinereading/elasticsearch-%E0%B8%A0%E0%B8%B2%E0%B8%84%E0%B8%A5%E0%B8%B8%E0%B8%A2%E0%B8%AA%E0%B8%99%E0%B8%B2%E0%B8%A1-%E0%B8%95%E0%B8%AD%E0%B8%99%E0%B8%97%E0%B8%B5%E0%B9%88-2-4979e03b8e02
